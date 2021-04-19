@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Advice</title>
+    <meta name="description" content="A Random Advice">
+    <meta name="keywords" content="Random, Advice">
+    <meta name="author" content="Salman Ahmad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="head-text">
+        Advice for the young at heart
+    </div>
+    <div class="container">
+        <div class="advice-area">
+            <div class="quote-badge">“</div>
+            <div id="adviceText">
+                Loading...
+            </div>
+            <hr>
+            <div class="">
+                <button class="advice-btn" onclick="getAdvice()">Give Another
+                </button>
+            </div>
+            <div class="text-center">
+                <button class="advice-btn" onclick="copyAdvice()">
+                    <span class="tooltiptext" id="myTooltip">Copy</span>
+                </button>
+                <button class="advice-btn" id="tweetAdvice" onclick="tweetAdvice()">
+                    Tweet
+                </button>
+            </div>
+        </div>
+    </div>
+    <input type="text" value="" id="myInput" />
+    <script src="script.js"></script>
+</body>
+
+</html>
